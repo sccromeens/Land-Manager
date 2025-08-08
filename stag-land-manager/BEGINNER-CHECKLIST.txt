@@ -1,0 +1,37 @@
+
+BEGINNER MODE CHECKLIST — Stag Land Manager
+Updated: 2025-08-08
+
+You will click, paste, and be done. No coding.
+
+STEP 1 — Create Supabase (free)
+1) Go to supabase.com and “Start your project” → Sign in.
+2) Click “New project” → give it a name (e.g., stag-land-manager).
+3) Wait until the project is ready, then go to Settings → API.
+4) Copy these values somewhere:
+   - Project URL
+   - anon public key
+   - service_role key
+
+STEP 2 — Paste the database schema
+1) In your Supabase project, open SQL Editor.
+2) Click “+ New query” and paste the contents of: supabase/schema.sql
+3) Click “Run”. Wait for success.
+4) (Optional) Click “+ New query” and paste the contents of: supabase/seed.sql then Run.
+
+STEP 3 — Create a Vercel account (free)
+1) Go to vercel.com → Sign up.
+2) Click “Add New…” → “Project” → “Import” from your Git provider OR upload this ZIP as a new repo first.
+3) In Vercel “Environment Variables”, add:
+   - NEXT_PUBLIC_SUPABASE_URL = (your Supabase Project URL)
+   - NEXT_PUBLIC_SUPABASE_ANON_KEY = (your Supabase anon public key)
+   - SUPABASE_SERVICE_ROLE_KEY = (your Supabase service_role key)
+   - (Optional) OPENAI_API_KEY
+   - (Optional) NEXT_PUBLIC_GOOGLE_MAPS_EMBED_API_KEY
+
+STEP 4 — Deploy
+1) Click “Deploy”. Wait until it finishes.
+2) Visit your new URL → click Login → enter your email for a magic link.
+3) After you’re in, go to Dashboard and try the tiles. Placeholders will show friendly messages until keys/data are connected.
+
+That’s it. If you get stuck, tell me which step and the exact wording on your screen. I’ll reply with “Click → Paste → Press” instructions.
