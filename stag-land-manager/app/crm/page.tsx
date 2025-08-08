@@ -1,8 +1,0 @@
-export default function CrmPage() {
-  return (
-    <div>
-      <h1 className="text-2xl font-semibold mb-2">CRM</h1>
-      <p className="text-sm text-gray-600">This is a placeholder view. Once Supabase is connected, data will appear here.</p>
-    </div>
-  );
-}
